@@ -146,6 +146,28 @@ letter-spacing: 2.5rem;
 
 </style>
   <script>
+
+//firebasestuff
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBV64Ic95K04HNUFkEtetM6IR7nU5I1nmg",
+    authDomain: "aoos-bac98.firebaseapp.com",
+    projectId: "aoos-bac98",
+    storageBucket: "aoos-bac98.firebasestorage.app",
+    messagingSenderId: "890210411755",
+    appId: "1:890210411755:web:3550f0ea29afc7fb28caae",
+    measurementId: "G-3DPT0FNECG"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
+
+
+    
 function myFunction() {
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('myInput');
